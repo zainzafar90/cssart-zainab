@@ -123,9 +123,48 @@ div:before {
     );
 }
 
+.eyeright .bottomlid {
+  border-radius: 40% 60% 50% 50% / 10% 10% 90% 90%;
+  width: 46%;
+  height: 33%;
+  bottom: 3%;
+  left: 30%;
+  background-image: radial-gradient(
+      ellipse at 58% 54%,
+      #a98578 37%,
+      rgba(213, 170, 155, 0) 40%
+    ),
+    radial-gradient(
+      ellipse at 53% 11%,
+      #ad987f 41%,
+      #ad8682,
+      rgba(129, 101, 77, 0) 66%
+    );
+  filter: blur(3px);
+}
+
+.eyeright .toplid {
+  background-image: linear-gradient(
+    95deg,
+    #92725a,
+    #9c736c 43%,
+    #ceaba5,
+    #9c7f72 76%,
+    #9f8167
+  );
+  border-radius: 52% 50% 59% 50% / 90% 90% 5% 11%;
+  width: 38%;
+  height: 31%;
+  bottom: 29%;
+  left: 32%;
+  box-shadow: 0em -2em 5em 0em #5d3425, 0.8em -1.1em 2em -0.1em #33201d,
+    inset 0 1.5em 0.4em -1.2em #906a62, -0.9em -1.6em 2em -0.5em #ca9f7a,
+    -2.3em -0.9em 2em 0.2em #846559;
+  filter: blur(1px);
+}
+
 .eyeright .eye {
   overflow: hidden;
-  border-radius: 97% 10%;
   background-image: radial-gradient(circle at 11% 8%, #f9f0e2 31%, #71655d 78%);
   height: 42%;
   width: 26%;
@@ -135,7 +174,7 @@ div:before {
   box-shadow: -0.1em -0.6em 0.3em -0.2em #170808c4,
     1.6em -1em 0.1em -1.6em white, inset -0.1em 0.1em 0.2em 0.2em #58282838,
     0.5em 0.1em 0.2em 0.1em #c39898bd, -0.1em -0.2em 0.2em 0em #8c635f;
-  border-radius: 70% 14% 100% 2%;
+  border-radius: 73% 14% 100% 2%;
 }
 
 .eye .iris {
@@ -184,4 +223,15 @@ div:before {
     #8c5b5b 18%,
     transparent 32%
   );
+}
+
+.eyeright .innercorner {
+  border-radius: 46%;
+  width: 10%;
+  height: 44%;
+  left: 27%;
+  bottom: 26%;
+  box-shadow: -1.5em 0.3em 2em -0.4em #886a61;
+  transform: rotate(13deg);
+  filter: blur(0.2em);
 }
