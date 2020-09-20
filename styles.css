@@ -9,6 +9,7 @@
   top: 10%;
   left: -5%;
 }
+
 .img img {
   width: 100%;
 }
@@ -84,6 +85,7 @@ div:before {
   border-radius: 35% 44% 49% 52% / 33% 48% 52% 40%;
   background-color: #f3d5bb;
   background-color: #9e8a7c;
+  background-color: #ac8579;
   transform: rotate(10deg);
 
   background-image: radial-gradient(
@@ -119,4 +121,50 @@ div:before {
       #ad8e79 10%,
       rgba(215, 190, 164, 0)
     );
+}
+
+.eyeright .eye {
+  overflow: hidden;
+  border-radius: 97% 10%;
+  background-image: radial-gradient(circle at 11% 8%, #f9f0e2 31%, #71655d 78%);
+  height: 42%;
+  width: 26%;
+  left: 39%;
+  bottom: 11%;
+  transform: rotate(48deg);
+  box-shadow: -0.1em -0.6em 0.3em -0.2em #170808c4,
+    1.6em -1em 0.1em -1.6em white, inset -0.1em 0.1em 0.2em 0.2em #58282838,
+    0.5em 0.1em 0.2em 0.1em #c39898bd, -0.1em -0.2em 0.2em 0em #8c635f;
+  border-radius: 70% 14% 100% 2%;
+}
+
+.eye .iris {
+  top: 8%;
+  right: 20%;
+  width: 75%;
+  height: 75%;
+  background-color: #261b1a;
+  color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(131deg, rgb(12 8 6) 31%, transparent 61%),
+    radial-gradient(transparent 33%, #000000 84%),
+    repeating-conic-gradient(
+      transparent,
+      rgba(53, 37, 37, 0.52) 20deg,
+      transparent 30deg
+    );
+  box-shadow: 0 0 0.3em 0.2em #272624;
+  border-radius: 50%;
+}
+
+.eye .pupil {
+  margin: auto;
+  background: #0c0708;
+  box-shadow: 0 0 0.2em 0.1em #251515;
+  width: 40%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
 }
