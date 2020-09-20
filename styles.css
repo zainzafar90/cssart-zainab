@@ -168,3 +168,20 @@ div:before {
   bottom: 0;
   border-radius: inherit;
 }
+
+.eyeright .tearduct {
+  border-radius: 83% 17%;
+  width: 6%;
+  height: 21%;
+  left: 37%;
+  bottom: 27%;
+  box-shadow: inset 0.7em -0.9em 0em -0.8em #ab8189,
+    -0.9em 0.2em 1em -0.4em #bf8f98;
+  transform: rotate(49deg);
+  background-image: linear-gradient(
+    24deg,
+    #a76974 1%,
+    #8c5b5b 18%,
+    transparent 32%
+  );
+}
