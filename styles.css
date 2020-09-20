@@ -4,7 +4,7 @@
   height: 88em;
   overflow: hidden;
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   opacity: 0.25;
   top: 10%;
   left: -5%;
@@ -123,26 +123,6 @@ div:before {
     );
 }
 
-.eyeright .bottomlid {
-  border-radius: 40% 60% 50% 50% / 10% 10% 90% 90%;
-  width: 46%;
-  height: 33%;
-  bottom: 3%;
-  left: 30%;
-  background-image: radial-gradient(
-      ellipse at 58% 54%,
-      #a98578 37%,
-      rgba(213, 170, 155, 0) 40%
-    ),
-    radial-gradient(
-      ellipse at 53% 11%,
-      #ad987f 41%,
-      #ad8682,
-      rgba(129, 101, 77, 0) 66%
-    );
-  filter: blur(3px);
-}
-
 .eyeright .toplid {
   background-image: linear-gradient(
     95deg,
@@ -161,6 +141,26 @@ div:before {
     inset 0 1.5em 0.4em -1.2em #906a62, -0.9em -1.6em 2em -0.5em #ca9f7a,
     -2.3em -0.9em 2em 0.2em #846559;
   filter: blur(1px);
+}
+
+.eyeright .bottomlid {
+  border-radius: 40% 60% 50% 50% / 10% 10% 90% 90%;
+  width: 46%;
+  height: 33%;
+  bottom: 3%;
+  left: 30%;
+  background-image: radial-gradient(
+      ellipse at 58% 54%,
+      #a98578 37%,
+      rgba(213, 170, 155, 0) 40%
+    ),
+    radial-gradient(
+      ellipse at 53% 11%,
+      #ad987f 41%,
+      #ad8682,
+      rgba(129, 101, 77, 0) 66%
+    );
+  filter: blur(3px);
 }
 
 .eyeright .eye {
@@ -234,4 +234,16 @@ div:before {
   box-shadow: -1.5em 0.3em 2em -0.4em #886a61;
   transform: rotate(13deg);
   filter: blur(0.2em);
+}
+
+.eyeright .brow {
+  border-radius: 55% 46% 0 0 / 90% 80% 0 0;
+  border-top: 1.8em solid rgba(60, 21, 8, 0.3);
+  border-left: 2.5em solid rgba(53, 14, 6, 0.3);
+  width: 60%;
+  height: 27%;
+  left: 25%;
+  top: 11%;
+  filter: blur(0.5em);
+  transform: rotate(17deg);
 }
