@@ -1,0 +1,122 @@
+.img {
+  margin: auto;
+  width: 100em;
+  height: 88em;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.25;
+  top: 10%;
+  left: -5%;
+}
+.img img {
+  width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+html,
+body {
+  background-color: #080707;
+}
+
+body {
+  padding: 0;
+  margin: 4em auto;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.frame {
+  margin: auto;
+  width: 70em;
+  height: 70em;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #211c17, #080707);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.inner-frame {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 7.5%;
+  left: 10%;
+}
+
+body .inner-frame * {
+  box-sizing: border-box;
+  position: absolute;
+}
+
+div:after,
+div:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.character {
+  width: 50em;
+  height: 86em;
+  margin: auto;
+  left: 11.25%;
+  top: -8%;
+  position: absolute;
+  transform: scale(0.45);
+}
+
+.character * {
+  position: absolute;
+}
+
+.head {
+  overflow: hidden;
+  width: 100%;
+  height: 68%;
+  margin: auto;
+  position: absolute;
+  border-radius: 35% 44% 49% 52% / 33% 48% 52% 40%;
+  background-color: #f3d5bb;
+  background-color: #9e8a7c;
+  transform: rotate(10deg);
+
+  background-image: radial-gradient(
+      circle at 56% 9%,
+      #da1f2821 8%,
+      rgba(254, 251, 251, 0) 29%
+    ),
+    radial-gradient(circle at 52% 16%, #f7f2e2 5%, rgba(253, 246, 235, 0) 27%),
+    radial-gradient(circle at 16% 16%, #e4cbbb 15%, rgba(115, 92, 59, 0) 26%),
+    linear-gradient(98deg, rgb(203 177 154) 14%, rgba(111, 80, 51, 0) 31%),
+    radial-gradient(ellipse closest-corner at 35% 50%, #dac5a6, #c39f7d);
+
+  box-shadow: -0.3em -2.7em 1.1em -2em #b59e83,
+    3.5em -5.1em 1.5em -4.4em #b79c7d, inset -0.5em -1.1em 1.8em -1.1em #7b6246,
+    inset -0.4em 1.6em 0.9em -0.8em #b59c7f,
+    inset -0.7em -0.9em 1.9em -1em #af8376, inset 2.2em -3em 2.4em -1em #7b6246,
+    inset -4em -2.7em 8em 0.3em #947968, inset -6em -0.2em 8em 3em #cdccaf,
+    1.3em 2.7em 0.8em -2em #2d040442, -14px -1px 8px -11px #150d0da8;
+}
+
+.eyeright {
+  width: 54%;
+  height: 26%;
+  left: 39%;
+  top: 30.3%;
+  background-image: radial-gradient(
+      ellipse closest-side at 50% 49%,
+      #c6ad91 53%,
+      rgba(214, 176, 156, 0) 83%
+    ),
+    radial-gradient(
+      ellipse closest-side at 50% 50%,
+      #ad8e79 10%,
+      rgba(215, 190, 164, 0)
+    );
+}
